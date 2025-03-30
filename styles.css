@@ -1,0 +1,102 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #cb7a11, #4525fc);
+    color: white;
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    max-width: 500px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    transition: background 0.3s, color 0.3s;
+}
+.task-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.task-input input, select, button {
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+button {
+    background: #12d9f3;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s;
+    font-weight: bold;
+}
+button:hover {
+    background: #0044ff;
+}
+.task-filters button {
+    background: #00c853;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+.task-filters button:hover {
+    background: #009624;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border-left: 5px solid #15ff00;
+    margin: 6px 0;
+    border-radius: 8px;
+    transition: 0.3s;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+li:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+.completed {
+    text-decoration: line-through;
+    color: lightgray;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background: linear-gradient(to right, #232526, #414345);
+    color: white;
+}
+.dark-mode .container {
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.1);
+}
+.dark-mode button {
+    background-color: #1e88e5;
+    color: white;
+}
+.dark-mode button:hover {
+    background-color: #1565c0;
+}
+.dark-mode .task-filters button {
+    background: #12d9f3;
+}
+.dark-mode .task-filters button:hover {
+    background: #12d9f3;
+}
